@@ -10,14 +10,15 @@ function registrarVenta(){
     cantidadVentas++;
     gananciasTotales += cantidadCafes * precioCafe;
 
-    return gananciasTotales;
+    
 }
 
 while(true){
   let opcion = prompt("Bienvenido al sistema de registro de ventas de café. ¿Qué acción desea realizar?\n1. Registrar una venta\n2. Ver ganancias totales\n3. Salir");
 
   if(opcion == "1"){
-      gananciasTotales = registrarVenta();
+      
+      registrarVenta();
 
       alert(`Venta registrada. Ganancias totales hasta ahora: ${gananciasTotales}`);
   }else if(opcion == "2"){
